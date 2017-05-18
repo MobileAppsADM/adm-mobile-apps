@@ -1,0 +1,31 @@
+ralex.rdz@gmail.com
+visual studio code
+Lluvia de Ideas
+
+- Rutas de ciclovias en el DF
+  - pros
+    - los mapas más usados no muestran rutas con cilovias ()googlemaps, etc
+    - Accesibilidad para usuarios poco experimentados
+    - profe sabe de mapas
+  - contras
+    - hay base de datos con rutas?
+    - si no, cómo se generarían?
+    - hay que aprender algo de mapas digitales
+- Dictado de ruta por voz
+      - pros
+        - no te distraes por ver el cel
+        - ayuda a orientación y no perderse
+      - contras
+        - desarrollo de sistema que por GPS y ruta, regrese comando de voz
+        - requiere comunicación via datos moviles para obtener los comandos de voz, dado que sería muy pesado almacenarlos en el equipo
+- Mostrar en el mapa sitios de reparación de bicicletas
+  - pros
+    - Patrosinios, descuentos, etc. Pueden ayudar a plan de financiamiento
+
+    - soluciona problemas reales, actuales
+- Mostrar en mapa Lugares Bike Friendly
+- Mostrar lugares de estacionamientos públicos
+- Calendario de eventos ciclísticos (rodadas, clases, expos)
+- Mostrar posibles lugares privados de Alojamiento Seguro
+- Botón de ayuda - Bici ángeles y/o familiares y conocidos
+- Tienda en línea de partes, servicios y bicis
