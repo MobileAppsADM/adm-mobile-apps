@@ -1,31 +1,117 @@
 ralex.rdz@gmail.com
 visual studio code
+
+
 Lluvia de Ideas
 
-- Rutas de ciclovias en el DF
+- MapRep - Mostrar en el mapa sitios de reparación de bicicletas (tallers especializados y particulares con conocimiento)
+  - pros
+    - Patrosinios, descuentos, etc. Pueden ayudar a plan de financiamiento
+    - soluciona problemas reales, actuales
+    - campaña de invitación
+  - contra
+    - validación de datos
+    - recopilación de datos (SEDEMA tiene algo)
+- MapFried - Mostrar en mapa Lugares Bike Friendly
+  -pros
+    - Patrosinios, descuentos, etc. Pueden ayudar a plan de financiamiento
+    - campaña de invitación
+  - contra
+    - recopilación de datos
+    - validación de datos
+- MapEst - Mostrar lugares de estacionamientos públicos -> Dónde dejé mi bici
+  - contra
+    - recopilación de datos
+- MapRutas de ciclovias en el DF -> Navegación -> por Voz
   - pros
     - los mapas más usados no muestran rutas con cilovias ()googlemaps, etc
     - Accesibilidad para usuarios poco experimentados
     - profe sabe de mapas
+    - sedema
+    - ecobicis
   - contras
     - hay base de datos con rutas?
     - si no, cómo se generarían?
     - hay que aprender algo de mapas digitales
-- Dictado de ruta por voz
-      - pros
-        - no te distraes por ver el cel
-        - ayuda a orientación y no perderse
-      - contras
-        - desarrollo de sistema que por GPS y ruta, regrese comando de voz
-        - requiere comunicación via datos moviles para obtener los comandos de voz, dado que sería muy pesado almacenarlos en el equipo
-- Mostrar en el mapa sitios de reparación de bicicletas
+- LisEve Lista de eventos ciclísticos (rodadas, clases, expos) -> Calendario
   - pros
+    - atrae y fomenta uso de bicicletas
     - Patrosinios, descuentos, etc. Pueden ayudar a plan de financiamiento
-
-    - soluciona problemas reales, actuales
-- Mostrar en mapa Lugares Bike Friendly
-- Mostrar lugares de estacionamientos públicos
-- Calendario de eventos ciclísticos (rodadas, clases, expos)
-- Mostrar posibles lugares privados de Alojamiento Seguro
-- Botón de ayuda - Bici ángeles y/o familiares y conocidos
+    - chingo de público
+  - contra
+    - requiere constante alimentación y social marketing
+    - validación de datos
+- MapTien Directorio de tiendas
+  - pros
+    - si se cobra el servicio, podría pedirse un porcentaje para el financiamiento de la app
+  -contraS
+    - recopilación de datos
+- Botón de ayuda - Bici ángeles, otros usuarios de la app y/o familiares y conocidos
+  - pros
+    - si se cobra el servicio, podría pedirse un porcentaje para el financiamiento de la app
+    - ya hay un equipo/aliado, trabajando en ángeles
+    - no existe servicio
+    - da confianza a nuevos ciclistas
+  - contra
+    - requeriría presencia en varias zonas
+- Mostrar posibles lugares privados de Alojamiento Seguro / Pensiones
+  - pros
+    - si se cobra el servicio, podría pedirse un porcentaje para el financiamiento de la app
+    - no existe tal servicio actualmente
+    - bicis no entran en transporte público (salvo domingo)
+    - es de las ciudades donde más llueve
+  - contra
+    - seguridad, desconfianza, posibles riesgos
 - Tienda en línea de partes, servicios y bicis
+  - pros
+    - si se cobra el servicio, podría pedirse un porcentaje para el financiamiento de la app
+    - atraería mucho público
+    - se podría ligar con otros servicios de tiendas en línueva
+
+# Posibles nombres
+  - birula
+  - birulapp
+  -
+
+# Requerimientos
+  - Mapa (Leaflet JS, mapbox) TODOS
+  - Registro de Lugares (DB)
+    - Nombre
+    - Foto
+    - Selección de tipo o categoría (taller, tienda. estacionamiento, friendly)
+    - Descripción
+    - Promociones
+    - Horarios
+    - Teléfono
+    - Rango de Precios
+    - Dirección
+    - Calificación y/o comentarios
+  - Registro de Rutas
+    - Investigación
+    - Vectores
+  - Registro de Eventos
+  - Registro de Perfil
+    - Nombre
+    - Correo
+    - Telefono
+  - Registro de contactos de emergencia
+    - Cel
+    - Nombre
+  - Ubicación GPS
+  - Notificiones para otros (tus fam, ami)
+  - Listado de Eventos
+  - Página de detalle por lugar
+    - Nombre
+    - Foto
+    - Tipo Categoría
+    - Descripción
+    - Promociones
+    - Horarios
+    - Teléfono
+    - Rango de Precios
+    - Dirección
+    - Calificación y/o comentarios
+
+Buenas prácticas
+  - qué ya sabe hacer el equipo de Trabajo
+  - Aprovechar chamba ya realizada por otras personas
