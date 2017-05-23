@@ -1,0 +1,71 @@
+
+## Tipos de Personas
+  - Visitante por primera vez
+  - Usuario con cuenta
+  - Ciclista experimentado
+  - Deportista
+  - Como mujer harta del acoso en el transporte público
+  - Ciclista inexperto
+  - Repartidor en bicicleta
+  - Bici ángel
+  - Godín harto de tráfico y transporte público
+  - Dueño o trabajador de taller
+  - Dueño o trabajador de tienda
+  - Dueño o trabajador de user friendly place
+  - Organizador de eventos de ciclismo
+
+## Historias de usuario
+
+      Como [TIPO_DE_PERSONA] quiero [ACCION_A_REALIZAR_EN_LA_APP], para [PROPÓSITO]
+
+
+ISAY
+- Como usuario quiero poder buscar lugares relacionados a la bicicleta para cureosear
+- como usuario con cuenta quiero agregar lugares a mis favoritos
+- Como usuario con cuenta quiero ver sólamente mis lugares favoritos en el mapa
+- Como usuario con cuenta, quiero registrar mis rutas más frecuentes
+- Como usuario, quiero filtrar los lugares que veo en el mapa según si son: talleres, tiendas, negocio bike firendly, estacionamientos, etc.
+- como usuario quiero poder centrar el mapa en ubicaciópn actual para ubicarme y ubicar lugares ciclisticos cerca
+- como usario con cuenta, quiero agregar a Mis lugares una nueva locación para poder visualizarla en el mapa
+- Como usuario sin cuenta, quiero crear mi cuenta para poder tener las funcionalidades de usuario con cuenta
+
+OMAR
+  - como Visitante por primera vez quiero conocer qué puedo hacer con esta app, para ver si me atrevo a probarla
+  - Como cilcista inexperimentada quiero poder encontrar rutas seguras por donde circular para sentirme con más confianza
+    - Ciclista inexperto quiero saber de eventos para ir acercándome a la comuindad ciclista
+      - como Bici ángel quiero recibir una alerta, con la ubicación, cuando alguien sufre un accidente o falla mecánica para auxiliarlo
+
+
+    - Como ciclista experimentado quiero encontrar tiendas de cliclismo cerca de donde me muevo para no tener que ir tan lejos
+
+    - Como ciclista experimentado quiero encontrar talleres de bicicletas cerca de donde me muevo para no tener que ir tan lejos
+
+    - como ciclista experimentado quiero comparar tiempos de rutas con otros usuarios experimentados
+
+    - Como Organizador de eventos de ciclismo quiero anunciar un evento para atraer público, aumentar la comunidad ciclista.
+
+    - Como repartidor en quiero encontrar la ruta más rápida para llegar a mi destino sin prisas
+
+    - Como usuario quiero encontrar lugares donde estacionar mi bici para no dejarla indefensa
+
+    - como usuario con cuenta quiero registrarme con ángel para poder asisistir a mis compartriotas
+
+    -
+
+
+AME
+- Como dueño de lugar (taller, tiendad, etc) quiero pasar por el proceso de validación para que mi negocio aparezca en el mapa
+- Como dueño de lugar (taller, tiendad, etc) quiero pasar por el proceso de validación para que mi negocio aparezca en el mapa
+
+- Como dueño de user friendly place Quiero ofrecer descuentos para promocionar mi negocio
+- Como mujer harta del acoso en el transporte público quiero encontrar una ruta para llegar a mi trabajo
+- Como mujer harta del acoso en el transporte público quiero promocionar una rodada para invitar a más mujeres a animarse a andar en bici
+- Como dueño de user friendly place ofrecer mi infraestructura para bicicletas (estacionamiento), para promocionar mi negocio
+-
+- Como Godín harto del tráfico y el transporte público quiero encontrar rutas rápidas para llegar sin prisas a mi chambita
+
+Cómo deportista quiero encontrar pistas o rutas para poder entrenar
+
+Cómo dueño de un taller quiero promocionar (ganar fama) mi taller para generar ingresos
+
+Cómo usuario quiero poder calificar un taller para después saber si es bueno o malo
