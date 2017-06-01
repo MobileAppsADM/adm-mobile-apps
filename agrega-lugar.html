@@ -3,32 +3,51 @@
   <head>
     <meta charset="utf-8">
     <title>Home</title>
+    <style>
+      body {
+        margin-left 50px;
+      }
+    </style>
   </head>
   <body>
-    <div>
-      <label for="">Nombre</label>
-        <input id="name-input" type="text">
-    </div>
-    <div>
-      <label for="">Dirección</label>
-        <input id="address-input" type="text">
-    </div>
-    <div>
-      <label for="">Teléfonoo</label>
-        <input id="phone-input" type="text">
-    </div>
-    <div>
-      <label for="">Horarios</label>
-        <textarea id="schedule-input" cols="30" rows="10"></textarea>
-    </div>
-    <div>
-      <select id="place-type-input">
-      <option value="taller">Taller</option>
-      <option value="tienda">Tienda</option>
-      <option value="negocio">Negocio</option>
-      </select>
-    </div>
+    <button onclick="abreFormulario()">Agrega lugar</button>
+    <section id="formulario-nuevo-lugar" style="display:none;">
+      <div>
+        <label for="name-input">Nombre</label>
+          <input id="name-input" type="text">
+      </div>
+      <div>
+        <label for="description-textarea">Descripción</label>
+          <textarea id="description-textarea" cols="30" rows="10"></textarea>
+      </div>
+      <div>
+        <label for="address-input">Dirección</label>
+          <input id="address-input" type="text">
+      </div>
+      <div>
+        <label for="phone-input">Teléfonoo</label>
+          <input id="phone-input" type="text">
+      </div>
+      <div>
+        <label for="schedule-textarea">Horarios</label>
+          <textarea id="schedule-textarea" cols="30" rows="10"></textarea>
+      </div>
+      <div>
+        <label for="place-type-select">Selecciona una categoría</label>
+        <select id="place-type-select">
+          <option value="taller">Taller</option>
+          <option value="tienda">Tienda</option>
+          <option value="negocio">Negocio</option>
+        </select>
+      </div>
+      <div>
+        <button onclick="guardaLugar()">Guardar</button>
+        <button onclick="cierraFormulario()">Cancelar</button>
+      </div>
+    </section>
+    <ul id="lista-lugares"></ul>
   </body>
+  <script src="datos.js"></script>
   <script src="agrega-lugar.js"></script>
 
 </html>
