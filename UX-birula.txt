@@ -1,4 +1,3 @@
-
 ## Tipos de Personas
   - Visitante por primera vez
   - Usuario con cuenta
