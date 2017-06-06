@@ -1,7 +1,6 @@
-var pointA = new L.LatLng(19.502, -99.2)
-var pointB = new L.LatLng(19.504, -99.21)
-var pointList = [pointA, pointB];
-let mymap;
+var pointList = []
+let mymap
+let dibujando = false
 
 document.addEventListener('DOMContentLoaded', function (event) {
   cargaMapa()
@@ -23,38 +22,41 @@ function cargaMapa () {
 }
 
 function onMapClick (e) {
-    
-    //alert("You clicked the map at " + e.latlng)
-    pointList.push(e.latlng)
-    //alert(pointList.length)
-    dibujarRuta(pointList);
-  }
 
-function dibujarRuta (puntos){
-  var firstpolyline = new L.Polyline(puntos, {
-      color: 'red',
-      weight: 3,
-      opacity: 0.5,
-      smoothFactor: 1
-  })
-  firstpolyline.addTo(mymap)
+  //alert("You clicked the map at " + e.latlng)
+  pointList.push(e.latlng)
+  //alert(pointList.length)
+  dibujarRuta(pointList);
+}
+
+function dibujarRuta (puntos) {
+  if (dibujando) {
+    var firstpolyline = new L.Polyline(puntos, {
+        color: 'red',
+        weight: 3,
+        opacity: 0.5,
+        smoothFactor: 1
+    })
+    firstpolyline.addTo(mymap)
+  }
  }
-function iniciarTrazado(){
+
+function iniciarTrazado () {
+  pointList = []
   mymap.on('click', onMapClick)
-  
+  dibujando = true
   document.querySelector('#mapid').style.cursor = 'copy'
-  document.querySelector('#guardaRuta').style.display = 'block' 
+  document.querySelector('#guardaRuta').style.display = 'block'
   document.querySelector('#dibujaRuta').style.display = 'none'
 
 }
 
-function terminarTrazado(){
-  document.querySelector('#guardaRuta').style.display = 'none' 
+function terminarTrazado () {
+  dibujando = false
+  document.querySelector('#mapid').style.cursor = '.moz-grab'
+  document.querySelector('#guardaRuta').style.display = 'none'
   document.querySelector('#dibujaRuta').style.display = 'block'
-  pointList = []
-  mymap.on('click', noDibujo)
-}
-
-function noDibujo(){
-  event.preventDefault();
+  mymap.on('click', function () {
+    return false
+  })
 }
