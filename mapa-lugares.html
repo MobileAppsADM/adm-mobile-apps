@@ -6,10 +6,19 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css"
    integrity="sha512-07I2e+7D8p6he1SIM+1twR5TIrhUQn9+I6yjqD53JQjFiMf8EtC93ty0/5vJTZGF8aAocvHYNEDJajGdNx1IsQ=="
    crossorigin=""/>
+   <style>
+     #guardaRuta{
+      display: none;
+     }
+   </style>
   </head>
   <body>
 
     <div id="mapid" style="height: 600px;"></div>
+
+    <button onclick="iniciarTrazado()" id="dibujaRuta">Dibujar Ruta</button>
+    <button onclick="terminarTrazado()" id="guardaRuta">Guardar Ruta</button>
+    
     <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"
   integrity="sha512-A7vV8IFfih/D732iSSKi20u/ooOfj/AGehOKq0f4vLT1Zr2Y+RX7C+w8A1gaSasGtRUZpF/NZgzSAu4/Gc41Lg=="
   crossorigin=""></script>
