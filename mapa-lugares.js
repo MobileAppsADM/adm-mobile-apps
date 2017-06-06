@@ -41,14 +41,20 @@ function dibujarRuta (puntos){
  }
 function iniciarTrazado(){
   mymap.on('click', onMapClick)
-  console.log('alog')
+  
   document.querySelector('#mapid').style.cursor = 'copy'
   document.querySelector('#guardaRuta').style.display = 'block' 
   document.querySelector('#dibujaRuta').style.display = 'none'
+
 }
 
 function terminarTrazado(){
   document.querySelector('#guardaRuta').style.display = 'none' 
   document.querySelector('#dibujaRuta').style.display = 'block'
   pointList = []
+  mymap.on('click', noDibujo)
+}
+
+function noDibujo(){
+  event.preventDefault();
 }
