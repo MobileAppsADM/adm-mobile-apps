@@ -44,8 +44,31 @@ let arregloDeLugares = [
     links: [
       'http://www.facebook.com/peperefacciones'
     ]
-  }
-]
+  },
+  {
+      name: 'Lolitas Bikes',
+      description: 'Come desde tu bici',
+      address: 'Zacatecas 142',
+      phone: '123456789',
+      schedule: 'Lun: 12:00-8:00 pm',
+      place_type: 'bikefriendly',
+      img: 'http://lorempixel.com/400/200/sports/',
+      location: {
+        lat: '19.416182',
+        lng: '-99.16848'
+      },
+      discounts: [
+        'Servicio completo a $200',
+        'Servicio completo a $300',
+        'Servicio completo a $500',
+        'Servicio completo a $600',
+      ],
+      rating: [2, 3, 5, 3, 2, 4, 1, 4, 2, 3, 4],
+      links: [
+        'http://www.facebook.com/peperefacciones'
+      ]
+    }
+  ]
 
 let arregloDeRutas = [
 

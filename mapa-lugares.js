@@ -3,7 +3,7 @@ let mymap
 let dibujando = false
 let GrupoDeTalleres
 let GrupoDeTiendas
-let GrupoDeBikeFriendlies
+let GrupoDeBikeFriendly
 let GrupoDeEstacionamientos
 
 document.addEventListener('DOMContentLoaded', function (event) {
@@ -22,7 +22,7 @@ function cargaMapa () {
   }).addTo(mymap)
   GrupoDeTalleres = L.layerGroup([])
   GrupoDeTiendas = L.layerGroup([])
-  GrupoDeBikeFriendlies = L.layerGroup([])
+  GrupoDeBikeFriendly = L.layerGroup([])
   GrupoDeEstacionamientos = L.layerGroup([])
   agregaGrupoDeLugares()
 }
@@ -42,14 +42,14 @@ function agregaGrupoDeLugares () {
     })
     mymap.addLayer(GrupoDeTalleres)
     mymap.addLayer(GrupoDeTiendas)
-    mymap.addLayer(GrupoDeBikeFriendlies)
+    mymap.addLayer(GrupoDeBikeFriendly)
     mymap.addLayer(GrupoDeEstacionamientos)
 }
 
 function agregaAGrupo (marker, tipo) {
   if (tipo === 'taller' ) GrupoDeTalleres.addLayer(marker)
   if (tipo === 'tienda' ) GrupoDeTiendas.addLayer(marker)
-  if (tipo === 'bikefriendly' ) GrupoDeBikeFriendlies.addLayer(marker)
+  if (tipo === 'bikefriendly' ) GrupoDeBikeFriendly.addLayer(marker)
   if (tipo === 'estacionamiento' ) GrupoDeEstacionamientos.addLayer(marker)
 }
 
@@ -68,8 +68,8 @@ function toggleTiendas () {
   // else btnTienda.addClass('selected')
 }
 function toggleBikefriendly () {
-  if (mymap.hasLayer(GrupoDeBikefriendly)) mymap.removeLayer(GrupoDeBikefriendly)
-  else mymap.addLayer(GrupoDeBikefriendly)
+  if (mymap.hasLayer(GrupoDeBikeFriendly)) mymap.removeLayer(GrupoDeBikeFriendly)
+  else mymap.addLayer(GrupoDeBikeFriendly)
   // let btnBikeFriendly = document.querySelector('#btn-bikeFriendly').className.replace(/\bselected\b/,'')
   // if (btnBikeFriendly.hasClass('selected')) btnBikeFriendly.className.replace(/\bselected\b/,'')
   // else btnBikeFriendly.addClass('selected')
