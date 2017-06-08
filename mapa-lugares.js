@@ -83,5 +83,11 @@ function toggleEstacionamientos () {
 }
 
 function centraMiUbicacion () {
-
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(position => {
+      mymap.panTo([position.coords.latitude, position.coords.longitude])
+    })
+  } else {
+    alert('Geolocation is not supported by this browser')
+  }
 }
