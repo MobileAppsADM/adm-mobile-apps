@@ -67,8 +67,8 @@ let arregloDeLugares = [
       links: [
         'http://www.facebook.com/peperefacciones'
       ]
-    }
-  ]
+    },
+  {
     name: 'Vegano restaurante',
     description: 'En la compra de una ensalada te regalamos un jugo',
     address: 'Chiapas 888',
