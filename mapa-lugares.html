@@ -7,30 +7,32 @@
    integrity="sha512-07I2e+7D8p6he1SIM+1twR5TIrhUQn9+I6yjqD53JQjFiMf8EtC93ty0/5vJTZGF8aAocvHYNEDJajGdNx1IsQ=="
    crossorigin=""/>
    <style>
-     button{
-       font-size: 16px;
-     }
-     input{
-       font-size: 16px;
-     }
-     #guardaRuta{
-      display: none;
-     }
+    #btnCentraLocacion {
+      position: relative;
+      left: 20px;
+      top: -33px;
+      z-index: 100000;
+    }
+
+    button.selected {
+      background-color: red;
+      color: white;
+    }
    </style>
   </head>
   <body>
-    <button onclick="iniciarTrazado()" id="dibujaRuta">Dibujar Ruta</button>
-    <button onclick="terminarTrazado()" id="guardaRuta">Guardar Ruta</button>
-    <form action="">
-        <input type="radio" name="color" value="red">Rojo
-        <input type="radio" name="color" value="blue">Azul
-        <input type="radio" name="color" value="green">Verde
-    </form>
+    <div id="filtros">
+      <button class="filtro" id="btn-taller" onclick="toggleTalleres()"><span id="icono_taller"></span><label for="">taller</label></button>
+      <button class="filtro" id="btn-tienda" onclick="toggleTiendas()"><span id="icono_tienda"></span><label for="">tienda</label></button>
+      <button class="filtro" id="btn-bikeFriendly" onclick="toggleBikefriendly()"><span id="icono_bikefriendly"></span><label for="">bikefriendly</label></button>
+      <button class="filtro" id="btn-estacionamiento" onclick="toggleEstacionamientos()"><span id="icono_estacionamientos"></span><label for="">estacionamientos</label></button>
+    </div>
     <div id="mapid" style="height: 400px;"></div>
+    <button id="btnCentraLocacion" onclick="centraMiUbicacion()">Q</button>
 
-    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"
-  integrity="sha512-A7vV8IFfih/D732iSSKi20u/ooOfj/AGehOKq0f4vLT1Zr2Y+RX7C+w8A1gaSasGtRUZpF/NZgzSAu4/Gc41Lg=="
-  crossorigin=""></script>
+
+    <script type="text/javascript" src="leaflet.js"></script>
     <script type="text/javascript" src="mapa-lugares.js"></script>
+    <script type="text/javascript" src="datos.js"></script>
   </body>
 </html>
