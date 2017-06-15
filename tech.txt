@@ -1,0 +1,21 @@
+fetch function
+https://developers.google.com/web/updates/2015/03/introduction-to-fetch
+
+then Promises
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then
+
+hapi - WEB SERVICE
+https://hapijs.com
+
+swapi.co
+
+mongo
+https://www.mongodb.com/
+
+
+CORDOVA - Wrapper para aplicaciones web -> Mobile natives (IOs, Android, Blackberry, Windowsphoen )
+https://cordova.apache.org/
+
+TUTORIAL CORDOVA
+https://ccoenraets.github.io/cordova-tutorial/create-cordova-project.html
+cordova plugin add cordova-plugin-device

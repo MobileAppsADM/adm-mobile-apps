@@ -9,7 +9,7 @@ function guardaLugar () {
   let addressValue = document.querySelector('#address-input').value
   let scheduleValue = document.querySelector('#schedule-textarea').value
   let place_typeValue = document.querySelector('#place-type-select').value
-  arregloDeLugares.push(
+  let body = JSON.stringify(
     {
       name: nameValue,
       description: descriptionValue,
@@ -20,8 +20,16 @@ function guardaLugar () {
       img: 'http://lorempixel.com/400/200/sports/'
     }
   )
-  cargaLugares()
-  cierraFormulario()
+  fetch('http://localhost:3000/places/', {
+      method: 'POST',
+      body: body
+    })
+    .then(function (res) {
+        res.json()
+          .then(function (data) {
+              arregloDeLugares.push(data)
+          })
+    })
 }
 
 function abreFormulario () {
