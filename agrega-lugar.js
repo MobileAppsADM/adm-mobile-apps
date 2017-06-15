@@ -57,5 +57,14 @@ function llenaListaLugares (lugares) {
 }
 
 function cargaLugares () {
-  document.querySelector('#lista-lugares').innerHTML = llenaListaLugares(arregloDeLugares)
+  fetch('http://192.168.1.64:3000/places/', {
+      method: 'GET'
+    })
+    .then(function (res) {
+        res.json()
+          .then(function (data) {
+              llenaListaLugares(data)
+          })
+    })
+  // document.querySelector('#lista-lugares').innerHTML = llenaListaLugares(arregloDeLugares)
 }
