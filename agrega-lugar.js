@@ -49,22 +49,23 @@ function cierraFormulario () {
 }
 
 function llenaListaLugares (lugares) {
+  console.log(lugares[0].name)
   var htmlLugares = ''
   for (var i = 0; i < lugares.length; i++) {
     htmlLugares += '<li>' + lugares[i].name + '</li>'
   }
+  console.log(htmlLugares)
   return htmlLugares
 }
 
 function cargaLugares () {
-  fetch('http://192.168.1.64:3000/places/', {
+  fetch('http://localhost:3000/places', {
       method: 'GET'
     })
     .then(function (res) {
         res.json()
           .then(function (data) {
-              llenaListaLugares(data)
+              document.querySelector('#lista-lugares').innerHTML = llenaListaLugares(data)
           })
     })
-  // document.querySelector('#lista-lugares').innerHTML = llenaListaLugares(arregloDeLugares)
 }
